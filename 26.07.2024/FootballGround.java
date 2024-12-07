@@ -33,7 +33,7 @@ public class FootballGround extends JComponent {
 	private void drawEllipse(Graphics2D g2d) {
 		Ellipse2D.Double midCircle = new Ellipse2D.Double(275, 180, 70, 70);
 		g2d.setColor(Color.WHITE);
-		g2d.setStroke(new BasicStroke(5)); // Adjust thickness here
+		g2d.setStroke(new BasicStroke(5)); 
 		g2d.draw(midCircle);
 	}
 
@@ -48,7 +48,7 @@ public class FootballGround extends JComponent {
 	private void drawBoundary(Graphics2D g2d) {
 		Rectangle2D.Double boundary = new Rectangle2D.Double(30, 40, 560, 360);
 		g2d.setColor(Color.WHITE);
-		g2d.setStroke(new BasicStroke(5)); // Adjust thickness here
+		g2d.setStroke(new BasicStroke(5));
 		g2d.draw(boundary);
 	}
 	
@@ -62,7 +62,7 @@ public class FootballGround extends JComponent {
 		Rectangle2D.Double OuterBracR = new Rectangle2D.Double(510, 120, 80, 200);
 		Rectangle2D.Double GoalBracR = new Rectangle2D.Double(590, 185, 20, 70);
 		g2d.setColor(Color.WHITE);
-		g2d.setStroke(new BasicStroke(5)); // Adjust thickness here
+		g2d.setStroke(new BasicStroke(5)); 
 		g2d.draw(innerBracL);
 		g2d.draw(OuterBracL);
 		g2d.draw(GoalBracL);
@@ -73,8 +73,8 @@ public class FootballGround extends JComponent {
 	}
 
 	private void drawArcs(Graphics2D g2d){
-		Arc2D.Double leftArc = new Arc2D.Double(70, 160, 80, 120, 270, 180, Arc2D.OPEN); // Correct closure type
-		Arc2D.Double rightArc = new Arc2D.Double(470, 160, 80, 120, 90, 180, Arc2D.OPEN); // Correct closure type
+		Arc2D.Double leftArc = new Arc2D.Double(70, 160, 80, 120, 270, 180, Arc2D.OPEN);
+		Arc2D.Double rightArc = new Arc2D.Double(470, 160, 80, 120, 90, 180, Arc2D.OPEN);
 		g2d.setColor(Color.WHITE);
 		g2d.setStroke(new BasicStroke(5)); // Adjust thickness here
 		g2d.draw(leftArc);
